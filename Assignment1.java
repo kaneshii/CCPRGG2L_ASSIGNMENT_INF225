@@ -22,5 +22,24 @@ public class Main {
     } else {
       System.out.println("Invalid email address");
     }
+    
+    System.out.print("Enter an phone: ");
+    String phone = input.nextLine();
+
+    // Define a regular expression for email addresses
+    regex = "09\\d{9}"; 
+
+    // Compile the regular expression
+    pattern = Pattern.compile(regex);
+
+    // Check if the email address is a valid format
+    matcher = pattern.matcher(phone);
+    
+    if (matcher.matches()) {
+      System.out.println("Valid Phone Number");
+    } else {
+      System.out.println("Invalid Phone Number");
+    }
+    
   }
 }
