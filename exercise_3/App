@@ -1,0 +1,56 @@
+public class App {
+    public static void main(String[] args) {
+
+        Character knight = new Character();
+
+        knight.strength = 10;
+        knight.agility = 5;
+        knight.intelligence = 0;
+        knight.name = "Chen";
+        knight.sayMyName();
+
+        Character mage = new Character();
+
+        mage.strength = 0;
+        mage.agility = 5;
+        mage.intelligence = 10;
+        mage.name = "Akasha";
+        mage.sayMyName();
+
+        Character thief = new Character();
+
+        thief.strength = 5;
+        thief.agility = 10;
+        thief.intelligence = 0;
+        thief.name = "Gondar";
+        thief.sayMyName();
+
+        weapon UncommonSword = new weapon();
+
+        UncommonSword.name = "Wooden Sword";
+        UncommonSword.damage = 10;
+        UncommonSword.rarity = "Green";
+        UncommonSword.saytheName();
+        UncommonSword.saytheDamage();
+        System.out.println(UncommonSword.shownameandRarity());
+
+        weapon CommonSword = new weapon();
+
+        CommonSword.name = "Iron Sword";
+        CommonSword.damage = 50;
+        CommonSword.rarity = "Blue";
+        CommonSword.saytheName();
+        CommonSword.saytheDamage();
+        System.out.println(CommonSword.shownameandRarity());
+
+        weapon RareSword = new weapon();
+
+        RareSword.name = "Legendary Sword";
+        RareSword.damage = 100;
+        RareSword.rarity = "Purple";
+        RareSword.saytheName();
+        RareSword.saytheDamage();
+        RareSword.AddDamage(188);
+        System.out.println(RareSword.shownameandRarity());
+    }
+}
